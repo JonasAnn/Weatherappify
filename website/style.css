@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #003366;
+    font-size: 16px;
+    color: beige;
+}
+
+:root{
+    --ff-main: 'Roboto', sans-serif;
+    --ff-sub: 'Comic Neue', cursive;
+}
+
+/* ----header css---- */
+
+.header{
+    padding: 20px 0 30px 0;
+    text-align: center;
+    font-family: var(--ff-main);
+}
+
+.header-text{
+    font-weight: 600;
+    font-size: 3.4rem;
+}
+
+.header-p{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+/* -----main css----- */
+.main{
+    margin: auto;
+    width: 60%;
+    height: auto;
+    padding: 10px 10px;
+    text-align: center;
+    background-color: burlywood;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+label{
+    display: block;
+    margin: 10px 0 10px 0;
+    font-family: var(--ff-sub);
+}
+#zip{
+    padding: 10px 55px 10px 15px;
+    border: 2px solid cadetblue;
+}
+#feelings{
+    margin: 0 0 10px 0;
+    width: 40%;
+    height: 160px;
+    border: 2px solid cadetblue;
+}
+#generate{
+    display: block;
+    margin: auto;
+    padding: 6px 45px;
+    background-color: cadetblue;
+    color: beige;
+    border: 2px solid beige;
+    border-radius: 10px;
+    font-size: 1.6rem;
+    cursor: pointer;
+
+}
+.result-div{
+    display: none;
+}
+#entryholder{
+    color: beige;
+    font-family: var(--ff-main); 
+}
+
+.zip-code{
+    margin: 5px 0 5px 0;
+    font-size: 1rem;
+    
+}
+#date{
+    margin: 10px 0 10px 0;
+    font-size: 1.6rem;
+}
+#temp{
+    margin: 10px 0 10px 0;
+    font-size: 2.5rem;
+}
+#content{
+    font-size: 1.6rem;
+    margin: 10px 0 10px 0;
+}
+.back-botton {
+    display: block;
+    margin: auto;
+    padding: 6px 45px;
+    background-color: cadetblue;
+    color: beige;
+    border: 2px solid beige;
+    border-radius: 10px;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
