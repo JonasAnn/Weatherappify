@@ -20,7 +20,7 @@ function performAction(e){
     inquiryDiv.classList.toggle('result-div');
     const zipCodeValue = zipCode.value;
     const feelingsValue = feelings.value;
-    console.log(projectData);
+   
     getTemp(baseURL,zipCodeValue,apiKey)
 
     //Post Data
@@ -29,9 +29,9 @@ function performAction(e){
              date:newDate, response:feelingsValue});
     })
     //update UI
-    .then(UpdateUX('/all'));
+    .then(function(res){UpdateUX('/all')});
 }
-console.log(projectData);
+
 /* Function called by event listener */
 function backAction(e){
     
@@ -91,9 +91,9 @@ const postData = async ( url = '', data = {})=>{
     
     try {
        const allData = await request.json();
-        document.querySelector('.date').innerHTML = allData[0].date;
-       document.querySelector('.temp').innerHTML = allData[0].temperature;
-       document.querySelector('.content').innerHTML = allData[0].response;
+        document.querySelector('#date').innerHTML = allData[0].date;
+       document.querySelector('#temp').innerHTML = allData[0].temperature;
+       document.querySelector('#content').innerHTML = allData[0].response;
     } catch(error){
         console.log('error', error);
     }

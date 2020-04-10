@@ -53,6 +53,6 @@ function addData(req,res){
 app.get('/all', getAllData);
 
 function getAllData(req,res){
-    res.send(ProjectData);
-    console.log(ProjectData);
+    res.send(projectData);
+    console.log(projectData);
 }
