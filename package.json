@@ -1,0 +1,26 @@
+{
+  "name": "weatherapify",
+  "version": "1.0.0",
+  "description": "This project requires you to create an asynchronous web app that uses Web API and user data to dynamically update the UI.",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonasAnn/Weather-App.git"
+  },
+  "author": "Jonah Ifeoma <ifyajoke@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JonasAnn/Weather-App/issues"
+  },
+  "homepage": "https://github.com/JonasAnn/Weather-App#readme"
+}
